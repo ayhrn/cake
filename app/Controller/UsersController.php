@@ -1,7 +1,6 @@
 <?php
 // app/Controller/UsersController.php
 App::uses('AppController', 'Controller');
-App::uses('BlowfishPasswordHasher', 'Controller/Component/Auth');
 
 class UsersController extends AppController {
     
@@ -43,9 +42,8 @@ class UsersController extends AppController {
             $d = $this->request->data;
             $d['User']['role'] = "user";
             if ($this->User->save($d)) {
-                $pHash = new BlowfishPasswordHasher();
                 $link = array('controller' => 'users', 'action' => 'activate', 
-                    $this->User->id . '-' . $pHash->hash($d['User']['password']));
+                    $this->User->id . '-' . md5($d['User']['username']));
                 App::uses('CakeEmail','Network/Email');
                 $mail = new CakeEmail('gmail');
                 $mail->from('vladkimkim@gmail.com')
@@ -117,7 +115,7 @@ class UsersController extends AppController {
     function activate($token) {
         $token = explode('-',$token);
         $user = $this->User->find('first', array(
-            'conditions' => array('id' => $token[0],'User.password' => $token[1],
+            'conditions' => array('id' => $token[0],'MD5(User.username)' => $token[1],
             'active' => 0)
             ));
             if(!empty($user)){
