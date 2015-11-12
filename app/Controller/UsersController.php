@@ -4,6 +4,8 @@ App::uses('AppController', 'Controller');
 
 class UsersController extends AppController {
 
+    public $components = array('Paginator', 'Flash', 'Session');
+    
     public function beforeFilter() {
         parent::beforeFilter();
         // Allow users to register and logout.
@@ -54,7 +56,8 @@ class UsersController extends AppController {
                         ->viewVars(array('username'=>$d['User']['username'], 
                             'link'=>$link))
                         ->send();
-                $this->Flash->success(__('The user has been saved'));
+                //$this->Flash->success(__('The user has been saved'));
+                $this->Session->setFlash(__('The user has been saved'), 'flash/success');
                 return $this->redirect(array('action' => 'index'));
             }
             $this->Flash->error(
