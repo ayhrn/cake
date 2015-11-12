@@ -37,7 +37,7 @@
 <?php foreach ($fournisseurs as $fournisseur): ?>
 	<div class="row">
             <div class="thumbnail">
-            <img src="/appstore/img/<?php echo h($fournisseur['Fournisseur']['filename']); ?>" alt="fournisseur_logo">
+            <img src="/img/<?php echo h($fournisseur['Fournisseur']['filename']); ?>" alt="fournisseur_logo">
             <div class="caption text-center"><h4><?php echo h($fournisseur['Fournisseur']['name']); ?>&nbsp;</h4>
 		
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $fournisseur['Fournisseur']['id']), array('class' => 'btn btn-primary btn-xs')); ?>
