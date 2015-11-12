@@ -1,7 +1,4 @@
-<?php
-$class = 'message';
-if (!empty($params['class'])) {
-    $class .= ' ' . $params['class'];
-}
-?>
-<div id="<?php echo h($key) ?>Message" class="<?php echo h($class) ?>"><?php echo h($message) ?></div>
+<div class="alert alert-info">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<?php echo $message ?>
+</div><!-- /.alert alert-info -->

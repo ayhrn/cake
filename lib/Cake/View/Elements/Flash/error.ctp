@@ -1,1 +1,4 @@
-<div id="Message" class="message error"><?php echo h($message) ?></div>
+<div class="alert alert-danger">
+	<button type="button" class="close" data-dismiss="alert">&times;</button>
+	<?php echo $message ?>
+</div><!-- /.alert alert-danger -->

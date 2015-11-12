@@ -40,13 +40,13 @@ class UsersController extends AppController {
         if ($this->request->is('post')) {
             //$this->User->create();
             $this->request->data['User']['role'] = "user";
-            if ($this->User->save($this->request->data)) {
-                $d = $this->request->data;
+            $d = $this->request->data;
+            if ($this->User->save($d)) {
                 $link = array('controller' => 'users', 'action' => 'activate', 
                     $this->User->id . '-' . md5($d['User']['password']));
                 App::uses('CakeEmail','Network/Email');
-                $email = new CakeEmail('gmail');
-                $email->from('vladkimkim@gmail.com')
+                $mail = new CakeEmail();
+                $mail->from('noreply@cake-vcount.rhcloud.com.com')
                         ->to($d['User']['email'])
                         ->subject('Confirmer Inscription')
                         ->emailFormat('html')
