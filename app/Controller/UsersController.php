@@ -45,8 +45,8 @@ class UsersController extends AppController {
             if ($this->User->save($d)) {
                 $link = array('controller' => 'users', 'action' => 'activate', 
                     $this->User->id . '-' . md5($d['User']['password']));
-                $mail = new CakeEmail();
-                $mail->from('noreply@localhost.com')
+                $mail = new CakeEmail('gmail');
+                $mail->from('vladkimkim@gmail.com')
                         ->to($d['User']['email'])
                         ->subject('ConfirmerInscription')
                         ->emailFormat('html')
