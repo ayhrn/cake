@@ -13,9 +13,9 @@
 	
 	<div class="collapse navbar-collapse navbar-ex1-collapse ">
 		<ul class="nav navbar-nav">
-                        <li><a href="/appstore/pages/apropos/"><?php echo __("À Propos");?></a></li>
-                        <li><a href="/appstore/applications/"><?php echo ("Applications");?></a></li>
-			<li><a href="/appstore/categories/"><?php echo __("Categories");?></a></li>
+                        <li><a href="/pages/apropos/"><?php echo __("À Propos");?></a></li>
+                        <li><a href="/applications/"><?php echo ("Applications");?></a></li>
+			<li><a href="/categories/"><?php echo __("Categories");?></a></li>
 			<li class="dropdown">
 				<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo __("Language");?><b class="caret"></b></a>
 				<ul class="dropdown-menu">
