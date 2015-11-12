@@ -45,6 +45,10 @@
                         'controller' => 'users',
                         'action' => 'login')
                     );
+                    echo $this->Html->link(__("Sign up"), array(
+                        'controller' => 'users',
+                        'action' => 'signup')
+                    );
                 }
                 ?>
             </li>

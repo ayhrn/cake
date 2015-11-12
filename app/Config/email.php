@@ -44,18 +44,5 @@ class EmailConfig {
 		'from' => 'you@localhost',
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
-	);
-        
-        
-        /*Gmail component setup in cakephp by Shaharia Azam (shaharia.azam@gmail.com)*/
-
-            public $gmail = array(
-                'host' => 'ssl://smtp.gmail.com',
-                'port' => 465,
-                'username' => 'vladkimkim@gmail.com',
-                'password' => 'Vl44dK11mK11m',
-                'transport' => 'Smtp'
-            );
-
-
+	); 
 }
