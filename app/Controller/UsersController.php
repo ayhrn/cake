@@ -51,7 +51,7 @@ class UsersController extends AppController {
                         ->subject('ConfirmerInscription')
                         ->emailFormat('html')
                         ->template('signup')
-                        ->viewVars(array('username'=>$d['User']['username']))
+                        ->viewVars(array('username'=>$d['User']['username'], 'link'=>$link))
                         ->send();
                 $this->Session->setFlash(__('The user has been saved'), 'flash/success');
                 return $this->redirect(array('action' => 'index'));
