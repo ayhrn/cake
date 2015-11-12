@@ -8,10 +8,6 @@
             'label' => __('Username')));
         echo $this->Form->input('password', array(
             'label' => __('Password')));
-        echo $this->Form->input('role', array(
-            'label' => __('Role'),
-            'options' => array('admin' => __('Admin'), 'user' => __('Super-User'))
-        ));
         echo $this->Form->input('email', array('class' => 'form-control')
                 );
 
