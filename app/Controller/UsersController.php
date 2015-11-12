@@ -38,7 +38,7 @@ class UsersController extends AppController {
     }
     public function signup() {
         if ($this->request->is('post')) {
-            $this->User->create();
+            //$this->User->create();
             $this->request->data['User']['role'] = "user";
             if ($this->User->save($this->request->data)) {
                 $d = $this->request->data;
