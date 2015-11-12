@@ -46,11 +46,4 @@ class EmailConfig {
 		//'headerCharset' => 'utf-8',
 	);
         
-        public $gmail = array(
-        'host' => 'ssl://smtp.gmail.com',
-        'port' => 465,
-        'username' => 'vladkimkim@gmail.com',
-        'password' => 'Vl44dK11mK11m',
-        'transport' => 'Smtp'    
-    );
 }

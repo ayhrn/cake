@@ -3,8 +3,6 @@
 App::uses('AppController', 'Controller');
 
 class UsersController extends AppController {
-
-    public $components = array('Paginator', 'Flash', 'Session');
     
     public function beforeFilter() {
         parent::beforeFilter();
