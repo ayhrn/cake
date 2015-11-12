@@ -41,7 +41,7 @@ class EmailConfig {
 
 	public $default = array(
 		'transport' => 'Mail',
-		'from' => 'noreply@cake-vcount.rhcloud.com.com',
+		'from' => 'noreply@cake-vcount.rhcloud.com',
 		//'charset' => 'utf-8',
 		//'headerCharset' => 'utf-8',
 	);

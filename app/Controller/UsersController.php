@@ -1,7 +1,6 @@
 <?php
 // app/Controller/UsersController.php
 App::uses('AppController', 'Controller');
-App::uses('CakeEmail','Network/Email');
 
 class UsersController extends AppController {
     
@@ -40,21 +39,20 @@ class UsersController extends AppController {
     public function signup() {
         if ($this->request->is('post')) {
             //$this->User->create();
-            $this->request->data['User']['role'] = "user";
             $d = $this->request->data;
+            $d['User']['role'] = "user";
             if ($this->User->save($d)) {
-                $link = array('controller' => 'users', 'action' => 'activate', 
-                    $this->User->id . '-' . md5($d['User']['password']));
-                $mail = new CakeEmail('gmail');
-                $mail->from('vladkimkim@gmail.com')
+                /* $link = array('controller' => 'users', 'action' => 'activate', 
+                    $this->User->id . '-' . md5($d['User']['password']));*/
+                App::uses('CakeEmail','Network/Email');
+                $mail = new CakeEmail();
+                $mail->from('my@localhost')
                         ->to($d['User']['email'])
                         ->subject('ConfirmerInscription')
                         ->emailFormat('html')
                         ->template('signup')
-                        ->viewVars(array('username'=>$d['User']['username'], 
-                            'link'=>$link))
+                        ->viewVars(array('username'=>$d['User']['username']))
                         ->send();
-                //$this->Flash->success(__('The user has been saved'));
                 $this->Session->setFlash(__('The user has been saved'), 'flash/success');
                 return $this->redirect(array('action' => 'index'));
             }
