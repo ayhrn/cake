@@ -26,29 +26,31 @@
 		</ul><!-- /NAV LEFT -->
 		
 		<ul class="nav navbar-nav navbar-right">
-            <li class="active">
+                
                 <?php if ($this->Session->check('Auth.User')) {
-                    echo $this->Html->link(__("Hello") . " ". $this->Session->read('Auth.User.username') . " (" . $this->Session->read('Auth.User.role') . ")",
+                    echo "<li>" . $this->Html->link(__("Hello") . " ". $this->Session->read('Auth.User.username') . " (" . $this->Session->read('Auth.User.role') . ")",
                                             array('controller' => 'users', 'action' => 'view', $this->Session->read('Auth.User.id')));
-                    echo "</li><li>";
+                    echo "</li>";
                     if ($this->Session->read('Auth.User.role') == "admin") {
-                        echo $this->Html->link(__("Add user"), array(
+                        echo "<li>" . $this->Html->link(__("Add user"), array(
                             'controller' => 'users',
                             'action' => 'add'));
-                        echo "</li><li>";
+                        echo "</li>";
                     }
-                    echo $this->Html->link(__("Log out"), array(
+                    echo "<li>" . $this->Html->link(__("Log out"), array(
                         'controller' => 'users',
                         'action' => 'logout'));
+                    echo "</li>";
                 } else {
-                    echo $this->Html->link(__("Login"), array(
+                    echo "<li>" . $this->Html->link(__("Login"), array(
                         'controller' => 'users',
                         'action' => 'login')
                     );
-                    echo $this->Html->link(__("Sign up"), array(
+                    echo "</li><li>" . $this->Html->link(__("Sign up"), array(
                         'controller' => 'users',
                         'action' => 'signup')
                     );
+                    echo "</li>";
                 }
                 ?>
             </li>
