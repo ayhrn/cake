@@ -1,6 +1,7 @@
 <?php
 // app/Controller/UsersController.php
 App::uses('AppController', 'Controller');
+App::uses('CakeEmail','Network/Email');
 
 class UsersController extends AppController {
     
@@ -44,11 +45,10 @@ class UsersController extends AppController {
             if ($this->User->save($d)) {
                 $link = array('controller' => 'users', 'action' => 'activate', 
                     $this->User->id . '-' . md5($d['User']['password']));
-                App::uses('CakeEmail','Network/Email');
                 $mail = new CakeEmail();
-                $mail->from('noreply@cake-vcount.rhcloud.com.com')
+                $mail->from('noreply@localhost.com')
                         ->to($d['User']['email'])
-                        ->subject('Confirmer Inscription')
+                        ->subject('ConfirmerInscription')
                         ->emailFormat('html')
                         ->template('signup')
                         ->viewVars(array('username'=>$d['User']['username'], 
