@@ -53,7 +53,8 @@ class AppController extends Controller {
             ),            
             'authenticate' => array(
                 'Form' => array(
-                    'passwordHasher' => 'Blowfish'
+                    'passwordHasher' => 'Blowfish',
+                    'scope' => array('User.active' => 1)
                 )
             ),
             'authorize' => array('Controller') // Added this line
