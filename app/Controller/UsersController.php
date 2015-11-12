@@ -7,7 +7,7 @@ class UsersController extends AppController {
     public function beforeFilter() {
         parent::beforeFilter();
         // Allow users to register and logout.
-        $this->Auth->allow('logout');
+        $this->Auth->allow('logout', 'activate');
         $this->Auth->allow('signup');
     }
 
@@ -127,7 +127,7 @@ class UsersController extends AppController {
                 $this->Session->setFlash("Lien d'activation invalide", "flash/error");
             }
             $this->redirect('/');
-        die();
+            die();
     }
 
 }
