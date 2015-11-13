@@ -122,7 +122,7 @@ class UsersController extends AppController {
             
             if(!empty($user)){
                 $link = array('controller' => 'users', 'action' => 'activate', 
-                    $user->User->id . '-' . md5($user['User']['username']));
+                    $user['User']['id'] . '-' . md5($user['User']['username']));
                 App::uses('CakeEmail','Network/Email');
                 $mail = new CakeEmail('gmail');
                 $mail->from('vladkimkim@gmail.com')
