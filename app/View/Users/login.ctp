@@ -13,3 +13,6 @@
     </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
 </div>
+<p><?php echo $this->Html->link("Réenvoyer email d'activation", array(
+                            'controller' => 'users',
+                            'action' => 'resend')) ; ?></p>

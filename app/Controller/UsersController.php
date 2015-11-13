@@ -16,7 +16,7 @@ class UsersController extends AppController {
             if ($this->Auth->login()) {
                 return $this->redirect($this->Auth->redirectUrl());
             }
-            $this->Flash->error(__('Invalid username or password, try again'));
+            $this->Flash->error(__("Login invalide. Avez-vous bien activé votre compte?"));
         }
     }
 
@@ -53,7 +53,7 @@ class UsersController extends AppController {
                         ->template('signup')
                         ->viewVars(array('username'=>$d['User']['username'], 'link'=>$link))
                         ->send();
-                $this->Session->setFlash(__('The user has been saved'), 'flash/success');
+                $this->Session->setFlash(__("Réussite de l'inscription. Vous allez pouvoir vous connecter après avoir valider par courriel."), 'flash/success');
                 return $this->redirect(array('action' => 'index'));
             }
             $this->Flash->error(

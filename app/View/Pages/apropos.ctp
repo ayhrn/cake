@@ -34,7 +34,7 @@
 </p>
 
 <h3>Diagramme de base de donnée</h3>
-<p><img alt="data_model" src="/appstore/img/data_model.gif"></p>
+<p><img alt="data_model" src="/img/data_model.gif"></p>
 <p><em>Source: <a href="http://www.databaseanswers.org/data_models/cell_mobile_apps_stores/index.htm" target="_blank">databaseanswers.org</a></em></p>
 
 <h3><?php echo __d('cake_dev', 'More about CakePHP'); ?></h3>
