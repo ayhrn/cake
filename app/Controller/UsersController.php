@@ -112,7 +112,35 @@ class UsersController extends AppController {
         return $this->redirect(array('action' => 'index'));
     }
     
-    function activate($token) {
+    public function resend() {
+        if ($this->request->is('post')) {
+
+            $d = $this->request->data;
+            $user = $this->User->find('first', array(
+            'conditions' => array('username' => $d['User']['username'],
+            'active' => 0)
+            ));
+            
+            if(!empty($user)){
+                $link = array('controller' => 'users', 'action' => 'activate', 
+                    $user->User->id . '-' . md5($user['User']['username']));
+                App::uses('CakeEmail','Network/Email');
+                $mail = new CakeEmail('gmail');
+                $mail->from('vladkimkim@gmail.com')
+                        ->to($user['User']['email'])
+                        ->subject('ConfirmerInscription')
+                        ->emailFormat('html')
+                        ->template('signup')
+                        ->viewVars(array('username'=>$user['User']['username'], 'link'=>$link))
+                        ->send();
+                $this->Session->setFlash("Lien d'activation envoyé", "flash/success");
+            } else {
+                $this->Session->setFlash("Compte avec ce nom d'utilisateur introuvable", "flash/error");
+            }
+        }
+    }
+    
+    public function activate($token) {
         $token = explode('-',$token);
         $user = $this->User->find('first', array(
             'conditions' => array('id' => $token[0],'MD5(User.username)' => $token[1],

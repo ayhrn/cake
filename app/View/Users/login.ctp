@@ -13,6 +13,9 @@
     </fieldset>
 <?php echo $this->Form->end(__('Login')); ?>
 </div>
-<p><?php echo $this->Html->link("Réenvoyer email d'activation", array(
+<p><?php echo $this->Html->link("Ré-envoyer email d'activation", array(
                             'controller' => 'users',
                             'action' => 'resend')) ; ?></p>
+<p><?php echo $this->Html->link("Pas de compte développeur? Inscrivez-vous", array(
+                            'controller' => 'users',
+                            'action' => 'signup')) ; ?></p>
