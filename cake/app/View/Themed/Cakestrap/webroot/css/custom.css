@@ -1,0 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,400italic);
+body { 
+    padding-top: 100px; 
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navbar-default {
+    background-color: rgba(0,0,0,0.9);
+    height: 100px;
+    padding-top: 30px;
+}
+
+.brand-logo {
+    display: block;
+    height: 300px;
+    width: 300px;
+    background: url(../img/app_logo_animate.svg);
+    background-size: cover;
+}
+
+.brand-logo-menu {
+    margin-top: -20px;
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: url(../img/app_logo.svg);
+    background-size: cover;
+}

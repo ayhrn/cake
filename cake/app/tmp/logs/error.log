@@ -1,0 +1,252 @@
+2015-12-21 03:58:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 03:59:00 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 04:00:51 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 04:01:33 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 04:01:38 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 04:01:56 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 04:02:07 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 04:02:13 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /cake/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\Model\Datasource\DboSource.php(260): Mysql->connect()
+#1 D:\UniServerZ\www\cake\lib\Cake\Model\ConnectionManager.php(105): DboSource->__construct(Array)
+#2 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3621): ConnectionManager::getDataSource('default')
+#3 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(1155): Model->setDataSource('default')
+#4 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3648): Model->setSource('applications')
+#5 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(3026): Model->getDataSource()
+#6 D:\UniServerZ\www\cake\lib\Cake\Model\Model.php(2998): Model->_readDataSource('all', Array)
+#7 D:\UniServerZ\www\cake\lib\Cake\Controller\Component\PaginatorComponent.php(196): Model->find('all', Array)
+#8 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(1086): PaginatorComponent->paginate(NULL, Array, Array)
+#9 D:\UniServerZ\www\cake\app\Controller\ApplicationsController.php(29): Controller->paginate()
+#10 [internal function]: ApplicationsController->index()
+#11 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(490): ReflectionMethod->invokeArgs(Object(ApplicationsController), Array)
+#12 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#14 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2015-12-21 10:23:04 Error: [MissingHelperException] Helper class CORE_PATHHelper could not be found.
+Exception Attributes: array (
+  'class' => 'CORE_PATHHelper',
+  'plugin' => false,
+)
+Request URL: /cake/applications/
+Stack Trace:
+#0 D:\UniServerZ\www\cake\lib\Cake\View\HelperCollection.php(63): HelperCollection->load('CORE_PATH')
+#1 D:\UniServerZ\www\cake\lib\Cake\View\View.php(858): HelperCollection->__isset('CORE_PATH')
+#2 D:\UniServerZ\www\cake\app\View\Themed\Cakestrap\Elements\menu\top_menu.ctp(16): View->__get('CORE_PATH')
+#3 D:\UniServerZ\www\cake\lib\Cake\View\View.php(971): include('D:\\UniServerZ\\w...')
+#4 D:\UniServerZ\www\cake\lib\Cake\View\View.php(933): View->_evaluate('D:\\UniServerZ\\w...', Array)
+#5 D:\UniServerZ\www\cake\lib\Cake\View\View.php(1227): View->_render('D:\\UniServerZ\\w...', Array)
+#6 D:\UniServerZ\www\cake\lib\Cake\View\View.php(418): View->_renderElement('D:\\UniServerZ\\w...', Array, Array)
+#7 D:\UniServerZ\www\cake\app\View\Themed\Cakestrap\Layouts\default.ctp(52): View->element('menu/top_menu')
+#8 D:\UniServerZ\www\cake\lib\Cake\View\View.php(971): include('D:\\UniServerZ\\w...')
+#9 D:\UniServerZ\www\cake\lib\Cake\View\View.php(933): View->_evaluate('D:\\UniServerZ\\w...', Array)
+#10 D:\UniServerZ\www\cake\lib\Cake\View\View.php(546): View->_render('D:\\UniServerZ\\w...')
+#11 D:\UniServerZ\www\cake\lib\Cake\View\View.php(481): View->renderLayout('', 'default')
+#12 D:\UniServerZ\www\cake\lib\Cake\Controller\Controller.php(960): View->render(NULL, NULL)
+#13 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(200): Controller->render()
+#14 D:\UniServerZ\www\cake\lib\Cake\Routing\Dispatcher.php(167): Dispatcher->_invoke(Object(ApplicationsController), Object(CakeRequest))
+#15 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2015-12-21 10:50:22 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /cake/theme/Cakestrap/css/img/app_logo.svg
+Stack Trace:
+#0 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-21 10:52:14 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /cake/img/app_logo.svg
+Stack Trace:
+#0 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-21 11:05:29 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /cake/theme/Cakestrap/img/app_logo-animate.svg
+Stack Trace:
+#0 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-12-21 11:05:41 Error: [MissingControllerException] Controller class ThemeController could not be found.
+Exception Attributes: array (
+  'class' => 'ThemeController',
+  'plugin' => NULL,
+)
+Request URL: /cake/theme/Cakestrap/img/app_logo-animate.svg
+Stack Trace:
+#0 D:\UniServerZ\www\cake\app\webroot\index.php(118): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
