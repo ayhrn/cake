@@ -1,3 +1,4 @@
+<div class="brand-logo"></div>
 <h3>Réalisé par Vladislav Kim</h3>
 
 <p><strong>420-267-MO</strong> Développer un site Web et une application pour Internet.</p>
@@ -34,7 +35,6 @@
 </p>
 
 <h3>Diagramme de base de donnée</h3>
-<p><img alt="data_model" src="/img/data_model.gif"></p>
 <p><em>Source: <a href="http://www.databaseanswers.org/data_models/cell_mobile_apps_stores/index.htm" target="_blank">databaseanswers.org</a></em></p>
 
 <h3>Activation de nouveaux comptes</h3>
