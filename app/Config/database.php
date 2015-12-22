@@ -94,9 +94,9 @@ class DATABASE_CONFIG {
 	       else:
 	           $this->default['host']       = "localhost";
 //	           $this->default['port']       = getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
-	           $this->default['login']      = "root";
-	           $this->default['password']   = "Dime";
-	           $this->default['database']   = "cake";
+	           $this->default['login']      = "appadmin";
+	           $this->default['password']   = "";
+	           $this->default['database']   = "appstore";
 	           $this->default['datasource'] = 'Database/Mysql';
 	           $this->test['datasource']    = 'Database/Mysql';
 	       endif;
