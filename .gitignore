@@ -27,3 +27,4 @@ Thumbs.db
 /app/Config/database.php.default
 !/plugins/
 !/vendors/
+/cake/nbproject/private/
