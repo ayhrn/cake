@@ -72,15 +72,12 @@ class DATABASE_CONFIG {
                 //'encoding' => 'utf8',
         );
         public $test = array(
-                'datasource' => 'Database/Mysql',
-                'persistent' => false,
-                'host'       => '',
-		'port'       => '',
-                'login'      => '',
-                'password'   => '',
-                'database'   => 'test_database',
-                'prefix'     => '',
-                //'encoding' => 'utf8',
+            'datasource' => 'Database/Mysql',
+            'persistent' => false,
+            'host'       => 'localhost',
+            'login'      => 'testadmin',
+            'password'   => '',
+            'database'   => 'testcake'
         );
 	public function __construct() {
                if (getenv("OPENSHIFT_MYSQL_DB_HOST")):
