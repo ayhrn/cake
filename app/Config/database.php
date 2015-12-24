@@ -73,43 +73,24 @@ class DATABASE_CONFIG {
         //'encoding' =&gt; 'utf8',
     );
         /*
-    class DATABASE_CONFIG {
+  
         public $default = array(
                 'datasource' => 'Database/Mysql',
                 'persistent' => false,
-                'host'       => '',
+                'host'       => 'localhost',
                 'port'       => '',
-                'login'      => '',
+                'login'      => 'appadmin',
                 'password'   => '',
-                'database'   => '',
+                'database'   => 'appstore',
                 'prefix'     => '',
                 //'encoding' => 'utf8',
         );
-    * */
-         
+ 
+         */
         public $test = array(
             'datasource' => 'Database/Sqlite',
             'persistent' => false,
             'database' => TEST_DB,
             'prefix' => '',
         );
-	public function __construct() {
-               if (getenv("OPENSHIFT_MYSQL_DB_HOST")):
-	           $this->default['host']       = getenv("OPENSHIFT_MYSQL_DB_HOST");
-	           $this->default['port']       = getenv("OPENSHIFT_MYSQL_DB_PORT");
-	           $this->default['login']      = getenv("OPENSHIFT_MYSQL_DB_USERNAME");
-	           $this->default['password']   = getenv("OPENSHIFT_MYSQL_DB_PASSWORD");
-	           $this->default['database']   = getenv("OPENSHIFT_APP_NAME");
-	           $this->default['datasource'] = 'Database/Mysql';
-	           $this->test['datasource']    = 'Database/Mysql';
-	       else:
-	           $this->default['host']       = "localhost";
-//	           $this->default['port']       = getenv("OPENSHIFT_POSTGRESQL_DB_PORT");
-	           $this->default['login']      = "appadmin";
-	           $this->default['password']   = "";
-	           $this->default['database']   = "appstore";
-	           $this->default['datasource'] = 'Database/Mysql';
-	           $this->test['datasource']    = 'Database/Mysql';
-	       endif;
-	}
 }
