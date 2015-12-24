@@ -48,7 +48,13 @@ class ApplicationTest extends CakeTestCase {
  * @return void
  */
 	public function testIsOwnedBy() {
-		$this->markTestIncomplete('testIsOwnedBy not implemented.');
+                // applications owned by User with id 1
+		$this->assertTrue($this->Application->isOwnedBy(1,1));
+                $this->assertTrue($this->Application->isOwnedBy(3,1));
+                // application owned by other user
+                $this->assertTrue($this->Application->isOwnedBy(6,4));
+                // Expected false
+                $this->assertFalse($this->Application->isOwnedBy(1,9));
 	}
 
 }
