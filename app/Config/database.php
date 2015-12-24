@@ -59,7 +59,21 @@
  * For Postgres : http://www.postgresql.org/docs/9.2/static/sql-set.html
  * For Sql Server : http://msdn.microsoft.com/en-us/library/ms190356.aspx
  */
+
+define('DEFAULT_DB', APP.DS.'sqlite'.DS.'default.sqlite');
+define('TEST_DB', APP.DS.'sqlite'.DS.'test.sqlite');
+
 class DATABASE_CONFIG {
+
+        public $default = array(
+        'datasource' => 'Database/Sqlite',
+        'persistent' => false,
+        'database' => DEFAULT_DB,
+        'prefix' => '',
+        //'encoding' =&gt; 'utf8',
+    );
+        /*
+    class DATABASE_CONFIG {
         public $default = array(
                 'datasource' => 'Database/Mysql',
                 'persistent' => false,
@@ -71,13 +85,13 @@ class DATABASE_CONFIG {
                 'prefix'     => '',
                 //'encoding' => 'utf8',
         );
+    * */
+         
         public $test = array(
-            'datasource' => 'Database/Mysql',
+            'datasource' => 'Database/Sqlite',
             'persistent' => false,
-            'host'       => 'localhost',
-            'login'      => 'testadmin',
-            'password'   => '',
-            'database'   => 'testcake'
+            'database' => TEST_DB,
+            'prefix' => '',
         );
 	public function __construct() {
                if (getenv("OPENSHIFT_MYSQL_DB_HOST")):
